@@ -47,5 +47,192 @@
          "reconstruction",
          "reproduction"
       ]
+   },
+   "Christian Topography Map": {
+      "id": 3,
+      "cartographer": "Cosmos Indicopleustes",
+      "regions": [
+         "Global",
+         "Europe",
+         "Africa"
+      ],
+      "year_create": "6th century AD",
+      "year_create_int": 550,
+      "url_map": "/images/maps/WorldMapCosmasIndicopleustes.jpg",
+      "url_thumb": "/images/thumbnails/WorldMapCosmasIndicopleustes_tn.jpg",
+      "type": "reproduction"
+   },
+   "Etymologiae Map": {
+      "id": 4,
+      "cartographer": "Isidore of Seville",
+      "regions": [
+         "Global",
+         "Europe",
+         "Asia",
+         "Africa"
+      ],
+      "year_create": "7th century AD (published 1472)",
+      "year_create_int": 650,
+      "url_map": "/images/maps/Etymolgiae_Isidore_Seville.jpg",
+      "url_thumb": "/images/thumbnails/Etymolgiae_Isidore_Seville_tn.jpg",
+      "type": "reproduction"
+   },
+   "Ibn Hawqal's Map": {
+      "id": 5,
+      "cartographer": "Muhammad Abu'l-Qasim ibn Hawqal",
+      "regions": [
+         "Global",
+         "Europe",
+         "Asia",
+         "Africa"
+      ],
+      "year_create": "977 AD",
+      "year_create_int": 977,
+      "url_map": "/images/maps/Ibn_Howqal_World_map.jpg",
+      "url_thumb": "/images/thumbnails/Ibn_Howqal_World_map_tn.jpg",
+      "type": "reproduction"
+   },
+   "Cotton World Map from Periegesis": {
+      "id": 5,
+      "cartographer": "Unknown",
+      "regions": [
+         "Global",
+         "Europe",
+         "Asia",
+         "Africa"
+      ],
+      "year_create": "992 AD, revised c. 1040 AD",
+      "year_create_int": 992,
+      "url_map": "/images/maps/Cotton_world_map.jpg",
+      "url_thumb": "/images/thumbnails/Cotton_world_map_tn.jpg",
+      "type": "original"
+   },
+   "Beatus Mappa Mundi": {
+      "id": 6,
+      "cartographer": "Beatus of Liebana",
+      "regions": [
+         "Global",
+         "Europe",
+         "Asia",
+         "Africa"
+      ],
+      "year_create": "c. 1050 AD",
+      "year_create_int": 1050,
+      "url_map": "/images/maps/Beatus_map.jpg",
+      "url_thumb": "/images/thumbnails/Beatus_map_tn.jpg",
+      "type": "original"
+   },
+   "Mahmud al-Kashgari's Map": {
+      "id": 7,
+      "cartographer": "Mahmud al-Kashgari",
+      "regions": [
+         "Global",
+         "Europe",
+         "Asia",
+         "Africa"
+      ],
+      "year_create": "1072 AD",
+      "year_create_int": 1072,
+      "url_map": "/images/maps/Kashgari_map.jpg",
+      "url_thumb": "/images/thumbnails/Kashgari_map_tn.jpg",
+      "type": "original"
+   },
+   "Al-Idrisi's Tabula Rogeriana": {
+      "id": 8,
+      "cartographer": "Muhammad Al-Idrisi",
+      "regions": [
+         "Global",
+         "Europe",
+         "Asia",
+         "Africa"
+      ],
+      "year_create": "1154",
+      "year_create_int": 1154,
+      "url_map": "/images/maps/TabulaRogeriana_upside-down.jpg",
+      "url_thumb": "/images/thumbnails/TabulaRogeriana_upside-down_tn.jpg",
+      "type": "reproduction"
+   },
+   "Catal Huyuk Map": {
+      "id": 9,
+      "cartographer": "Unknown",
+      "regions": [
+         "Global",
+         "Babylon"
+      ],
+      "year_create": "c. 6200 BC",
+      "year_create_int": -6200,
+      "url_map": "/images/maps/CatalHuyuk.png",
+      "url_thumb": "/images/thumbnails/CatalHuyuk_tn.jpg",
+      "type": "original"
+   },
+   "Turin Papyrus #1": {
+      "id": 10,
+      "cartographer": "Amenakhte",
+      "regions": [
+         "Global",
+         "Egypt"
+      ],
+      "year_create": "c. 1300 BC",
+      "year_create_int": -1300,
+      "url_map": "/images/maps/TurinPapyrus1.jpg",
+      "url_thumb": "/images/thumbnails/TurinPapyrus1_tn.jpg",
+      "type": "original"
+   },
+   "Turin Papyrus #2": {
+      "id": 11,
+      "cartographer": "Amenakhte",
+      "regions": [
+         "Global",
+         "Egypt"
+      ],
+      "year_create": "c. 1300 BC",
+      "year_create_int": -1300,
+      "url_map": "/images/maps/TurinPapyrus2.jpg",
+      "url_thumb": "/images/thumbnails/TurinPapyrus2_tn.jpg",
+      "type": "original"
+   },
+   "Mawangdi Silk Map": {
+      "id": 12,
+      "cartographer": "Unknown",
+      "regions": [
+         "Global",
+         "China"
+      ],
+      "year_create": "2nd century BC",
+      "year_create_int": -150,
+      "url_map": "/images/maps/Western_Han_Mawangdui_Silk_Map.jpg",
+      "url_thumb": "/images/thumbnails/Western_Han_Mawangdui_Silk_Map_tn.jpg",
+      "type": "original"
+   },
+   "Gangnido": {
+      "id": 13,
+      "cartographer": "Unknown",
+      "regions": [
+         "Global",
+         "China",
+         "Korea"
+      ],
+      "year_create": "1402 AD",
+      "year_create_int": 1402,
+      "url_map": "/images/maps/KangnidoMap.jpg",
+      "url_thumb": "/images/thumbnails/KangnidoMap_tn.jpg",
+      "type": "original"
+   },
+   "Ravenna Cosmography": {
+      "id": 14,
+      "cartographer": "Unknown",
+      "regions": [
+         "Global",
+         "Europe",
+         "Asia",
+         "Africa"
+      ],
+      "year_create": "732 AD",
+      "year_create_int": 732,
+      "url_map": "/images/maps/Ravenna Cosmography.jpg",
+      "url_thumb": "/images/thumbnails/Ravenna Cosmography_tn.jpg",
+      "type": "reconstruction"
    }
+
+
 }
