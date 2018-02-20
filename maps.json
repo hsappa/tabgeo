@@ -146,7 +146,7 @@
          "Asia",
          "Africa"
       ],
-      "year_create": "1154",
+      "year_create": "1154 AD",
       "year_create_int": 1154,
       "url_map": "/images/maps/TabulaRogeriana_upside-down.jpg",
       "url_thumb": "/images/thumbnails/TabulaRogeriana_upside-down_tn.jpg",
@@ -157,7 +157,8 @@
       "cartographer": "Unknown",
       "regions": [
          "Global",
-         "Babylon"
+         "Babylon",
+         "Asia"
       ],
       "year_create": "c. 6200 BC",
       "year_create_int": -6200,
@@ -170,7 +171,8 @@
       "cartographer": "Amenakhte",
       "regions": [
          "Global",
-         "Egypt"
+         "Egypt",
+         "Africa"
       ],
       "year_create": "c. 1300 BC",
       "year_create_int": -1300,
@@ -183,7 +185,8 @@
       "cartographer": "Amenakhte",
       "regions": [
          "Global",
-         "Egypt"
+         "Egypt",
+         "Africa"
       ],
       "year_create": "c. 1300 BC",
       "year_create_int": -1300,
@@ -196,7 +199,8 @@
       "cartographer": "Unknown",
       "regions": [
          "Global",
-         "China"
+         "China",
+         "Asia"
       ],
       "year_create": "2nd century BC",
       "year_create_int": -150,
@@ -210,7 +214,7 @@
       "regions": [
          "Global",
          "China",
-         "Korea"
+         "Asia"
       ],
       "year_create": "1402 AD",
       "year_create_int": 1402,

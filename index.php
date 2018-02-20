@@ -45,6 +45,7 @@ require 'logic.php';
                <option value='babylon'<?= isRegionSelected('babylon'); ?>>Babylon</option>
                <option value='egypt'<?= isRegionSelected('egypt'); ?>>Egypt</option>
                <option value='rome'<?= isRegionSelected('rome'); ?>>Rome</option>
+               <option value='china'<?= isRegionSelected('china'); ?>>China</option>
             </select>
          </label>
          <label class="col-sm">
