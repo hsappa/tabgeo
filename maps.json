@@ -1,0 +1,51 @@
+{
+   "Imago Mundi": {
+      "id": 0,
+      "cartographer": "Unknown",
+      "regions": [
+         "Global",
+         "Europe",
+         "Africa",
+         "Asia",
+         "Babylon"
+      ],
+      "year_create": "6th century BC",
+      "year_create_int": -6000,
+      "url_map": "/images/maps/Baylonianmaps.JPG",
+      "url_thumb": "/images/thumbnails/Baylonianmaps_tn.JPG",
+      "type": "original"
+   },
+   "Codex Vaticanus Urbinas Graecus": {
+      "id": 1,
+      "cartographer": "Ptolemy",
+      "regions": [
+         "Global",
+         "Rome",
+         "Europe",
+         "Africa"
+      ],
+      "year_create": "120 BC",
+      "year_create_int": -120,
+      "url_map": "/images/maps/Ptolemy-World_Vat_Urb_82.jpg",
+      "url_thumb": "/images/thumbnails/Ptolemy-World_Vat_Urb_82_tn.jpg",
+      "type": "reconstruction"
+   },
+   "Tabula Peutingeriana": {
+      "id": 2,
+      "cartographer": "Marcus Vipsanius Agrippa (?)",
+      "regions": [
+         "Global",
+         "Rome",
+         "Europe",
+         "Africa"
+      ],
+      "year_create": "1st century BC",
+      "year_create_int": -12,
+      "url_map": "/images/maps/TabulaPeutingeriana.jpg",
+      "url_thumb": "/images/thumbnails/TabulaPeutingeriana_tn.jpg",
+      "type": [
+         "reconstruction",
+         "reproduction"
+      ]
+   }
+}
