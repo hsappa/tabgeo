@@ -68,7 +68,7 @@ require 'logic.php';
 <?php endif?>
          <div class='col-sm'>
             <div class='card mb-4 box-shadow'>
-               <a href='<?=$map['url_map'] ?>'><img src='<?=$map['url_thumb'] ?>' alt='Thumbprint of <?=$mapName ?>' class='px-3 py-1'></a>
+               <a href='<?=$map['url_map'] ?>'><img src='<?=$map['url_thumb'] ?>' alt="Thumbprint of <?=$mapName ?>" class='px-3 py-1'></a>
                <div class='card-body my-0 py-0'>
                   <p class='font-weight-bold my-0 py-0'><?=$mapName?></p>
                   <p class='my-0 py-0'>Created By: <?=$map['cartographer']?></p>
