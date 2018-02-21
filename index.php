@@ -17,7 +17,7 @@ require 'logic.php';
     <form method='GET' action='index.php'>
         <article class='row'>
             <h6 class="col-sm-4 row">Map Type:
-                <label class='mx-1' for='original'>
+                <label class='checkbox mx-1' for='original'>
                     <input type='checkbox'
                            name='mapType[]'
                            id='original'
@@ -25,7 +25,7 @@ require 'logic.php';
                            class='ml-2'>
                     Original
                 </label>
-                <label class='mx-1' for='reconstruction'>
+                <label class='checkbox mx-1' for='reconstruction'>
                     <input type='checkbox'
                            name='mapType[]'
                            id='reconstruction'
@@ -33,7 +33,7 @@ require 'logic.php';
                            class='ml-2'>
                     Reconstruction
                 </label>
-                <label class='mx-1' for='reproduction'>
+                <label class='checkbox mx-1' for='reproduction'>
                     <input type='checkbox'
                            name='mapType[]'
                            id='reproduction'
@@ -42,14 +42,28 @@ require 'logic.php';
                     Reproduction
                 </label>
             </h6>
-            <h6 class="col-sm"><label for='rangeYearLower'>Year Start:</label>
-                <input type='text' name='rangeYearLower' id='rangeYearLower' value='<?= $gRangeYearLower ?>'>
+            <h6 class="col-sm form-group"><label for='rangeYearLower'>Year Start:</label>
+                <input type='text' name='rangeYearLower' id='rangeYearLower'
+                    class='form-control<?php if(isInvalid('rangeYearLower')): ?> is-invalid<?php endif ?>'
+                    value='<?= $gRangeYearLower ?>'>
+                <?php if(isInvalid('rangeYearLower')): ?>
+                    <p class="invalid-feedback float-none">
+                        Must be a number.
+                    </p>
+                <?php endif ?>
             </h6>
-            <h6 class="col-sm"><label for='rangeYearUpper'>Year End:</label>
-                <input type='text' name='rangeYearUpper' id='rangeYearUpper' value='<?= $gRangeYearUpper ?>'>
+            <h6 class="col-sm form-group"><label for='rangeYearUpper'>Year End:</label>
+                <input type='text' name='rangeYearUpper' id='rangeYearUpper'
+                    class='form-control<?php if(isInvalid('rangeYearUpper')): ?> is-invalid<?php endif ?>'
+                    value='<?= $gRangeYearUpper ?>'>
+                <?php if(isInvalid('rangeYearUpper')): ?>
+                    <p class="invalid-feedback float-none">
+                        Must be a number.
+                    </p>
+                <?php endif ?>
             </h6>
-            <h6 class="col-sm"><label for='region'>Region</label>
-                <select name='region' id='region'>
+            <h6 class="form-group col-sm"><label for='region'>Region</label>
+                <select name='region' id='region' class="form-control">
                     <option value='global'<?= isRegionSelected('global'); ?>>Global</option>
                     <option value='africa'<?= isRegionSelected('africa'); ?>>Africa</option>
                     <option value='asia'<?= isRegionSelected('asia'); ?>>Asia</option>
@@ -60,8 +74,8 @@ require 'logic.php';
                     <option value='china'<?= isRegionSelected('china'); ?>>China</option>
                 </select>
             </h6>
-            <h6 class="col-sm">Search:
-                <input type='submit' value='Explore' class='btn btn-secondary my-2'>
+            <h6 class="col-sm">
+                <button type="submit" class="btn btn-secondary">Submit</button>
             </h6>
         </article>
     </form>
