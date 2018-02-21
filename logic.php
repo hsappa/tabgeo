@@ -18,8 +18,6 @@ $gMapTypes <> null ? $gMapStore->filterByMapType($gMapTypes) : null;
     $gMapStore->filterByUpperRange($gRangeYearUpper) : null;
 $gRegion <> null ? $gMapStore->filterByRegion($gRegion) : null;
 
-
-
 function isRegionSelected($lRegionName)
 {
     global $gRegion;
