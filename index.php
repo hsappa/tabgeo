@@ -60,7 +60,7 @@ require 'logic.php';
                     <option value='china'<?= isRegionSelected('china'); ?>>China</option>
                 </select>
             </h6>
-            <h6 class="col-sm">
+            <h6 class="col-sm">Search:
                 <input type='submit' value='Explore' class='btn btn-secondary my-2'>
             </h6>
         </header>
@@ -70,36 +70,36 @@ require 'logic.php';
     <h1 class='text-center'>Tabula Geographica</h1>
     <p class='text-center'>Use the search bar above to explore the collection of maps</p>
     <article class='album py-5 bg-light'>
-        <section class='container'>
+        <div class='container'>
 <?php $i = 0; ?>
 <?php $isTagOpen = True; ?>
 <?php foreach ($mapStore->getFilteredResults() as $mapName => $map) : ?>
 <?php if ($i % 3 == 0): ?>
 <?php $isTagOpen = True; ?>
-            <section class='row'>
+            <div class='row'>
 <?php endif ?>
-                <section class='col-sm'>
-                    <section class='card mb-4 box-shadow'>
+                <div class='col-sm'>
+                    <div class='card mb-4 box-shadow'>
                         <a href='<?= $map['url_map'] ?>'><img src='<?= $map['url_thumb'] ?>'
                                                               alt="Thumbprint of <?= $mapName ?>"
                                                               class='px-3 py-1'></a>
-                        <section class='card-body my-0 py-0'>
+                        <div class='card-body my-0 py-0'>
                             <p class='font-weight-bold my-0 py-0'><?= $mapName ?></p>
                             <p class='my-0 py-0'>Created By: <?= $map['cartographer'] ?></p>
                             <p class='my-0 py-0'>Date: <?= $map['year_create'] ?></p>
-                        </section>
-                    </section>
-                </section>
+                        </div>
+                    </div>
+                </div>
 <?php if ($i % 3 == 2): ?>
-            </section>
+            </div>
 <?php $isTagOpen = False; ?>
 <?php endif ?>
 <?php $i++; ?>
 <?php endforeach ?>
 <?php if ($isTagOpen): ?>
-            </section>
+            </div>
 <?php endif ?>
-        </section>
+        </div>
     </article>
 </main>
 </body>
