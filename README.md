@@ -1,17 +1,21 @@
 # Project 2
 + By: J. Paul Mercurio
-+ Production URL: (p2.hsappa.me)[http://ps.hsappa.me]
-+ Alternative Production URL: (tabgeo.hsappa.me)[http://tabgeo.hsappa.me]
++ Production URL: [p2.hsappa.me](http://ps.hsappa.me)
++ Alternative Production URL: [tabgeo.hsappa.me](http://tabgeo.hsappa.me)
 
 ## Outside resources
-(Wikipedia for many maps)[https://en.wikipedia.org]
-(Cartographic Images)[http://cartographic-images.net/Cartographic_Images/Cartographic_Images.html]
-(Let's Make Thumbnails)[http://makethumbnails.com/#dropzone]
-(Bootstrap)[https://getbootstrap.com/]
-(W3Schools)[https://www.w3schools.com/]
+[Wikipedia for many maps](https://en.wikipedia.org)
+[Cartographic Images](http://cartographic-images.net/Cartographic_Images/Cartographic_Images.html)
+[Let's Make Thumbnails](http://makethumbnails.com/#dropzone)
+[Bootstrap](https://getbootstrap.com/)
+[W3Schools](https://www.w3schools.com/)
+[W3 Validator](https://validator.w3.org)
 
 ## Code style divergences
-*list any divergences from PSR-1/PSR-2 and course guidelines on code style*
+* no intentional divergences
 
-## Notes for instructor
-*any notes for me to refer to while grading; if none, omit this section*
+* I originally coded this up with many more DIV tags and replaced just about all with 
+  meaningful tags.  But there are some layout elements that resisted being 
+  treated as other elements and some sort of object container was needed for bootstrap.
+  I understand that DIVs are elements of last resort but would appreciate feedback on 
+  whether their use was appropriate.
