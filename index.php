@@ -13,7 +13,7 @@ require 'logic.php';
           crossorigin="anonymous">
 </head>
 <body>
-<nav class="site-header sticky-top py-3 px-3 text-light bg-dark" id="navbarHeader">
+<header class="site-header sticky-top py-3 px-3 text-light bg-dark" id="navbarHeader">
     <form method='GET' action='index.php'>
         <header class='row'>
             <h6 class="col-sm-4 row">Map Type:
@@ -65,40 +65,44 @@ require 'logic.php';
             </h6>
         </header>
     </form>
-</nav>
+</header>
 <main>
     <h1 class='text-center'>Tabula Geographica</h1>
     <p class='text-center'>Use the search bar above to explore the collection of maps</p>
-    <article class='album py-5 bg-light'>
+    <article class='album bg-light'>
+        <h6 class='text-center pb-3 pt-3'>
+            Showing <?= getResultsCount('Filtered'); ?> maps from our collection of <?= getResultsCount('All'); ?> ancient maps.
+        </h6>
         <div class='container'>
-<?php $i = 0; ?>
-<?php $isTagOpen = True; ?>
-<?php foreach ($mapStore->getFilteredResults() as $mapName => $map) : ?>
-<?php if ($i % 3 == 0): ?>
-<?php $isTagOpen = True; ?>
-            <div class='row'>
-<?php endif ?>
+            <?php $i = 0; ?>
+            <?php $isTagOpen = true; ?>
+            <?php foreach ($gMapStore->getFilteredResults() as $mapName => $map) : ?>
+                <?php if ($i % 3 == 0): ?>
+                    <?php $isTagOpen = true; ?>
+                    <div class='row'>
+                <?php endif ?>
                 <div class='col-sm'>
-                    <div class='card mb-4 box-shadow'>
+                    <article class='card mb-4 box-shadow'>
+                        <h6 class='font-weight-bold my-0 pt-2 px-3'><?= $mapName ?></h6>
                         <a href='<?= $map['url_map'] ?>'><img src='<?= $map['url_thumb'] ?>'
                                                               alt="Thumbprint of <?= $mapName ?>"
                                                               class='px-3 py-1'></a>
                         <div class='card-body my-0 py-0'>
-                            <p class='font-weight-bold my-0 py-0'><?= $mapName ?></p>
+
                             <p class='my-0 py-0'>Created By: <?= $map['cartographer'] ?></p>
                             <p class='my-0 py-0'>Date: <?= $map['year_create'] ?></p>
                         </div>
-                    </div>
+                    </article>
                 </div>
-<?php if ($i % 3 == 2): ?>
-            </div>
-<?php $isTagOpen = False; ?>
-<?php endif ?>
-<?php $i++; ?>
-<?php endforeach ?>
-<?php if ($isTagOpen): ?>
-            </div>
-<?php endif ?>
+                <?php if ($i % 3 == 2): ?>
+                    </div>
+                    <?php $isTagOpen = false; ?>
+                <?php endif ?>
+                <?php $i++; ?>
+            <?php endforeach ?>
+            <?php if ($isTagOpen): ?>
+        </div>
+        <?php endif ?>
         </div>
     </article>
 </main>
