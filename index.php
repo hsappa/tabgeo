@@ -13,10 +13,10 @@ require 'logic.php';
           crossorigin="anonymous">
 </head>
 <body>
-<header class="site-header sticky-top py-3 px-3 text-light bg-dark" id="navbarHeader">
-    <form method='GET' action='index.php'>
-        <article class='row'>
-            <section class="col-sm-4 row"><h6>Map Type:</h6>
+<article class="site-header sticky-top py-3 px-3 text-light bg-dark" id="navbarHeader">
+    <h5 class='row'>Search by</h5>
+    <form method='GET' action='index.php' class='row'>
+            <section class="col-sm-4 row"><h6>MapType:</h6>
                 <label class='checkbox mx-1' for='original'>
                     <input type='checkbox'
                            name='mapType[]'
@@ -79,9 +79,9 @@ require 'logic.php';
                     <button type="submit" class="btn btn-secondary">Submit</button>
                 </h6>
             </section>
-        </article>
+
     </form>
-</header>
+</article>
 <main>
     <h1 class='text-center'>Tabula Geographica</h1>
     <p class='text-center'>Use the search bar above to explore the collection of maps</p>
