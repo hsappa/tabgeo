@@ -16,7 +16,7 @@ require 'logic.php';
 <header class="site-header sticky-top py-3 px-3 text-light bg-dark" id="navbarHeader">
     <form method='GET' action='index.php'>
         <article class='row'>
-            <h6 class="col-sm-4 row">Map Type:
+            <section class="col-sm-4 row">Map Type:
                 <label class='checkbox mx-1' for='original'>
                     <input type='checkbox'
                            name='mapType[]'
@@ -41,28 +41,28 @@ require 'logic.php';
                            class='ml-2'>
                     Reproduction
                 </label>
-            </h6>
-            <h6 class="col-sm form-group"><label for='rangeYearLower'>Year Start:</label>
+            </section>
+            <section class="col-sm form-group"><label for='rangeYearLower'>Year Start:</label>
                 <input type='text' name='rangeYearLower' id='rangeYearLower'
                     class='form-control<?php if(isInvalid('rangeYearLower')): ?> is-invalid<?php endif ?>'
                     value='<?= $gRangeYearLower ?>'>
                 <?php if(isInvalid('rangeYearLower')): ?>
-                    <div class="invalid-feedback">
+                    <p class="invalid-feedback">
                         Must be a number.
-                    </div>
+                    </p>
                 <?php endif ?>
-            </h6>
-            <h6 class="col-sm form-group"><label for='rangeYearUpper'>Year End:</label>
+            </section>
+            <section class="col-sm form-group"><label for='rangeYearUpper'>Year End:</label>
                 <input type='text' name='rangeYearUpper' id='rangeYearUpper'
                     class='form-control<?php if(isInvalid('rangeYearUpper')): ?> is-invalid<?php endif ?>'
                     value='<?= $gRangeYearUpper ?>'>
                 <?php if(isInvalid('rangeYearUpper')): ?>
-                    <div class="invalid-feedback">
+                    <p class="invalid-feedback">
                         Must be a number.
-                    </div>
+                    </p>
                 <?php endif ?>
-            </h6>
-            <h6 class="form-group col-sm"><label for='region'>Region</label>
+            </section>
+            <section class="form-group col-sm"><label for='region'>Region</label>
                 <select name='region' id='region' class="form-control">
                     <option value='global'<?= isRegionSelected('global'); ?>>Global</option>
                     <option value='africa'<?= isRegionSelected('africa'); ?>>Africa</option>
@@ -73,10 +73,10 @@ require 'logic.php';
                     <option value='rome'<?= isRegionSelected('rome'); ?>>Rome</option>
                     <option value='china'<?= isRegionSelected('china'); ?>>China</option>
                 </select>
-            </h6>
-            <h6 class="col-sm">
+            </section>
+            <section class="col-sm">
                 <button type="submit" class="btn btn-secondary">Submit</button>
-            </h6>
+            </section>
         </article>
     </form>
 </header>
