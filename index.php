@@ -15,7 +15,7 @@ require 'logic.php';
 <body>
 <header class="site-header sticky-top py-3 px-3 text-light bg-dark" id="navbarHeader">
     <form method='GET' action='index.php'>
-        <header class='row'>
+        <article class='row'>
             <h6 class="col-sm-4 row">Map Type:
                 <label class='mx-1' for='original'>
                     <input type='checkbox'
@@ -63,7 +63,7 @@ require 'logic.php';
             <h6 class="col-sm">Search:
                 <input type='submit' value='Explore' class='btn btn-secondary my-2'>
             </h6>
-        </header>
+        </article>
     </form>
 </header>
 <main>
