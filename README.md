@@ -10,6 +10,9 @@
 * [Bootstrap](https://getbootstrap.com/)
 * [W3Schools](https://www.w3schools.com/)
 * [W3 Validator](https://validator.w3.org)
+* [Stack Overflow](https://www.stackoverflow.com)
+* [PHP](https://www.php.net)
+
 
 ## Code style divergences
 * no intentional divergences
