@@ -16,7 +16,7 @@ require 'logic.php';
 <header class="site-header sticky-top py-3 px-3 text-light bg-dark" id="navbarHeader">
     <form method='GET' action='index.php'>
         <article class='row'>
-            <section class="col-sm-4 row">Map Type:
+            <section class="col-sm-4 row"><h6>Map Type:</h6>
                 <label class='checkbox mx-1' for='original'>
                     <input type='checkbox'
                            name='mapType[]'
@@ -42,7 +42,7 @@ require 'logic.php';
                     Reproduction
                 </label>
             </section>
-            <section class="col-sm form-group"><label for='rangeYearLower'>Year Start:</label>
+            <section class="col-sm form-group"><h6><label for='rangeYearLower'>Year Start:</label></h6>
                 <input type='text' name='rangeYearLower' id='rangeYearLower'
                     class='form-control<?php if(isInvalid('rangeYearLower')): ?> is-invalid<?php endif ?>'
                     value='<?= $gRangeYearLower ?>'>
@@ -52,7 +52,7 @@ require 'logic.php';
                     </p>
                 <?php endif ?>
             </section>
-            <section class="col-sm form-group"><label for='rangeYearUpper'>Year End:</label>
+            <section class="col-sm form-group"><h6><label for='rangeYearUpper'>Year End:</label></h6>
                 <input type='text' name='rangeYearUpper' id='rangeYearUpper'
                     class='form-control<?php if(isInvalid('rangeYearUpper')): ?> is-invalid<?php endif ?>'
                     value='<?= $gRangeYearUpper ?>'>
@@ -62,7 +62,7 @@ require 'logic.php';
                     </p>
                 <?php endif ?>
             </section>
-            <section class="form-group col-sm"><label for='region'>Region</label>
+            <section class="form-group col-sm"><h6><label for='region'>Region</label></h6>
                 <select name='region' id='region' class="form-control">
                     <option value='global'<?= isRegionSelected('global'); ?>>Global</option>
                     <option value='africa'<?= isRegionSelected('africa'); ?>>Africa</option>
@@ -75,7 +75,9 @@ require 'logic.php';
                 </select>
             </section>
             <section class="col-sm">
-                <button type="submit" class="btn btn-secondary">Submit</button>
+                <h6>
+                    <button type="submit" class="btn btn-secondary">Submit</button>
+                </h6>
             </section>
         </article>
     </form>
