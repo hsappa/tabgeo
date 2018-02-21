@@ -16,6 +16,8 @@ $gRangeYearLower <> null ? $gMapStore->filterByLowerRange($gRangeYearLower) : nu
 $gRangeYearUpper <> null ? $gMapStore->filterByUpperRange($gRangeYearUpper) : null;
 $gRegion <> null ? $gMapStore->filterByRegion($gRegion) : null;
 
+
+
 function isRegionSelected($lRegionName)
 {
     global $gRegion;
@@ -62,4 +64,36 @@ function getResultsCount($allOrFiltered = 'All')
 function sanitize($str)
 {
     return htmlentities($str, ENT_QUOTES, "UTF-8");
+}
+
+function isInvalid($inputName)
+{
+    $result = false;
+    global $gRangeYearLower;
+    global $gRangeYearUpper;
+
+    switch($inputName) {
+        case 'rangeYearLower':
+            if(!is_numeric($gRangeYearLower))
+            {
+                if($gRangeYearLower <> '')
+                {
+                    $result = true;
+                }
+            }
+            break;
+        case 'rangeYearUpper':
+            if(!is_numeric($gRangeYearUpper))
+            {
+                if($gRangeYearUpper <> '')
+                {
+                    $result = true;
+                }
+            }
+            break;
+        default:
+            $result = false;
+    }
+
+    return $result;
 }
