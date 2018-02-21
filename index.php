@@ -16,7 +16,7 @@ require 'logic.php';
 <nav class="site-header sticky-top py-3 px-3 text-light bg-dark" id="navbarHeader">
     <form method='GET' action='index.php'>
         <header class='row'>
-            <section class="col-sm-4 row">Map Type:
+            <h6 class="col-sm-4 row">Map Type:
                 <label class='mx-1' for='original'>
                     <input type='checkbox'
                            name='mapType[]'
@@ -41,14 +41,14 @@ require 'logic.php';
                            class='ml-2'>
                     Reproduction
                 </label>
-            </section>
-            <section class="col-sm"><label for='rangeYearLower'>Year Start:</label>
+            </h6>
+            <h6 class="col-sm"><label for='rangeYearLower'>Year Start:</label>
                 <input type='text' name='rangeYearLower' id='rangeYearLower' value='<?= $gRangeYearLower ?>'>
-            </section>
-            <section class="col-sm"><label for='rangeYearUpper'>Year End:</label>
+            </h6>
+            <h6 class="col-sm"><label for='rangeYearUpper'>Year End:</label>
                 <input type='text' name='rangeYearUpper' id='rangeYearUpper' value='<?= $gRangeYearUpper ?>'>
-            </section>
-            <section class="col-sm"><label for='region'>Region</label>
+            </h6>
+            <h6 class="col-sm"><label for='region'>Region</label>
                 <select name='region' id='region'>
                     <option value='global'<?= isRegionSelected('global'); ?>>Global</option>
                     <option value='africa'<?= isRegionSelected('africa'); ?>>Africa</option>
@@ -59,44 +59,48 @@ require 'logic.php';
                     <option value='rome'<?= isRegionSelected('rome'); ?>>Rome</option>
                     <option value='china'<?= isRegionSelected('china'); ?>>China</option>
                 </select>
-            </section>
-            <section class="col-sm">
+            </h6>
+            <h6 class="col-sm">
                 <input type='submit' value='Explore' class='btn btn-secondary my-2'>
-            </section>
+            </h6>
         </header>
     </form>
 </nav>
 <main>
     <h1 class='text-center'>Tabula Geographica</h1>
     <p class='text-center'>Use the search bar above to explore the collection of maps</p>
-    <div class='album py-5 bg-light'>
-        <div class='container'>
-            <?php $i = 0; ?>
-            <?php foreach ($mapStore->getFilteredResults() as $mapName => $map) : ?>
-                <?php if ($i % 3 == 0): ?>
-                    <div class='row'>
-                <?php endif ?>
-                <div class='col-sm'>
-                    <div class='card mb-4 box-shadow'>
+    <article class='album py-5 bg-light'>
+        <section class='container'>
+<?php $i = 0; ?>
+<?php $isTagOpen = True; ?>
+<?php foreach ($mapStore->getFilteredResults() as $mapName => $map) : ?>
+<?php if ($i % 3 == 0): ?>
+<?php $isTagOpen = True; ?>
+            <section class='row'>
+<?php endif ?>
+                <section class='col-sm'>
+                    <section class='card mb-4 box-shadow'>
                         <a href='<?= $map['url_map'] ?>'><img src='<?= $map['url_thumb'] ?>'
                                                               alt="Thumbprint of <?= $mapName ?>"
                                                               class='px-3 py-1'></a>
-                        <div class='card-body my-0 py-0'>
+                        <section class='card-body my-0 py-0'>
                             <p class='font-weight-bold my-0 py-0'><?= $mapName ?></p>
                             <p class='my-0 py-0'>Created By: <?= $map['cartographer'] ?></p>
                             <p class='my-0 py-0'>Date: <?= $map['year_create'] ?></p>
-                        </div>
-                    </div>
-                </div>
-                <?php if ($i % 3 == 2): ?>
-                    </div>
-                <?php endif ?>
-                <?php $i++; ?>
-            <?php endforeach ?>
-            <?php if ($i > 0 and $i % 3 <> 0): ?>
-        </div>
-        <?php endif ?>
-    </div>
+                        </section>
+                    </section>
+                </section>
+<?php if ($i % 3 == 2): ?>
+            </section>
+<?php $isTagOpen = False; ?>
+<?php endif ?>
+<?php $i++; ?>
+<?php endforeach ?>
+<?php if ($isTagOpen): ?>
+            </section>
+<?php endif ?>
+        </section>
+    </article>
 </main>
 </body>
 </html>
