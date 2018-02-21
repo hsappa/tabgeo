@@ -47,9 +47,9 @@ require 'logic.php';
                     class='form-control<?php if(isInvalid('rangeYearLower')): ?> is-invalid<?php endif ?>'
                     value='<?= $gRangeYearLower ?>'>
                 <?php if(isInvalid('rangeYearLower')): ?>
-                    <p class="invalid-feedback float-none">
+                    <div class="invalid-feedback">
                         Must be a number.
-                    </p>
+                    </div>
                 <?php endif ?>
             </h6>
             <h6 class="col-sm form-group"><label for='rangeYearUpper'>Year End:</label>
@@ -57,9 +57,9 @@ require 'logic.php';
                     class='form-control<?php if(isInvalid('rangeYearUpper')): ?> is-invalid<?php endif ?>'
                     value='<?= $gRangeYearUpper ?>'>
                 <?php if(isInvalid('rangeYearUpper')): ?>
-                    <p class="invalid-feedback float-none">
+                    <div class="invalid-feedback">
                         Must be a number.
-                    </p>
+                    </div>
                 <?php endif ?>
             </h6>
             <h6 class="form-group col-sm"><label for='region'>Region</label>
