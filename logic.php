@@ -12,8 +12,10 @@ $gRegion = (isset($_GET['region']) ? $_GET['region'] : null);
 $gMapStore = new MapStore('maps.json');
 
 $gMapTypes <> null ? $gMapStore->filterByMapType($gMapTypes) : null;
-$gRangeYearLower <> null ? $gMapStore->filterByLowerRange($gRangeYearLower) : null;
-$gRangeYearUpper <> null ? $gMapStore->filterByUpperRange($gRangeYearUpper) : null;
+($gRangeYearLower <> null AND !isInvalid('rangeYearLower')) ?
+    $gMapStore->filterByLowerRange($gRangeYearLower) : null;
+($gRangeYearUpper <> null AND !isInvalid('rangeYearUpper')) ?
+    $gMapStore->filterByUpperRange($gRangeYearUpper) : null;
 $gRegion <> null ? $gMapStore->filterByRegion($gRegion) : null;
 
 

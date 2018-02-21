@@ -75,8 +75,8 @@ require 'logic.php';
                 </select>
             </section>
             <section class="col-sm">
-                <h6>
-                    <button type="submit" class="btn btn-secondary">Submit</button>
+                <h6 class='align-bottom'>
+                    <button type="submit" class="btn btn-secondary align-bottom">Submit</button>
                 </h6>
             </section>
 
